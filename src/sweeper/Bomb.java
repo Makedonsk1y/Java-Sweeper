@@ -44,6 +44,10 @@ class Bomb {
             }
         }
     }
+
+    public int getTotalBombs(){
+        return totalBombs;
+    }
 }
 
 
