@@ -72,9 +72,9 @@ public class JavaSweeper extends JFrame {
 
     private String getMessage(){
         return switch (game.getState()) {
-            case PLAYED -> "Think twice";
-            case BOMBED -> "You lose";
-            case WINNER -> "Congratulations";
+            case PLAYED -> "Game is on";
+            case BOMBED -> "You lose :(";
+            case WINNER -> "Congratulations! You are winner!";
             default -> "Welcome";
         };
     }
