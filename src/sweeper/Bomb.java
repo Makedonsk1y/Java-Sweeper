@@ -45,7 +45,7 @@ class Bomb {
         }
     }
 
-    public int getTotalBombs(){
+    int getTotalBombs(){
         return totalBombs;
     }
 }
