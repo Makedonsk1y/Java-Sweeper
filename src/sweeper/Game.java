@@ -2,8 +2,8 @@ package sweeper;
 
 public class Game {
 
-    private Bomb bomb;
-    private Flag flag;
+    private final Bomb bomb;
+    private final Flag flag;
     private GameState state;
 
     public GameState getState() {
@@ -85,6 +85,7 @@ public class Game {
     }
 
     public void pressRightButton(Coord coord){
+        if (gameOver()) return;
         flag.toggleFlagedToBox(coord);
     }
 
